@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background-color: $background-color-primary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
+}
+
+p {
+  margin: 0;
+}
+.darkModeTheme {
+  background-color: $background-color-dark-primary;
+  color: $text-color-primary-dark;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
+
+  h2 {
+    color: $text-color-primary-dark;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  flex: 1;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.appContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}

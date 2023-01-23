@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/chaindots/static/css/main.cac24c28.css",
+    "main.js": "/chaindots/static/js/main.3e0571bb.js",
+    "static/media/sun.png": "/chaindots/static/media/sun.8dacecb2fb4ef36dd1ef.png",
+    "static/media/loading.gif": "/chaindots/static/media/loading.5e01ee7931d3de11d2ef.gif",
+    "static/media/back.png": "/chaindots/static/media/back.e940f0f4148386badd38.png",
+    "static/media/moon.svg": "/chaindots/static/media/moon.9ff1a0348f786d68658e2b762ef04fb3.svg",
+    "index.html": "/chaindots/index.html",
+    "main.cac24c28.css.map": "/chaindots/static/css/main.cac24c28.css.map",
+    "main.3e0571bb.js.map": "/chaindots/static/js/main.3e0571bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cac24c28.css",
+    "static/js/main.3e0571bb.js"
+  ]
+}

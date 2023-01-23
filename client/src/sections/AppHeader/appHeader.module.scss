@@ -1,0 +1,42 @@
+@import "../../variables.scss";
+
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  background-color: $background-color-secondary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+}
+
+.appPageTitle {
+  font-size: 15px;
+  margin-left: 100px;
+}
+
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  &:hover {
+    cursor: pointer !important;
+    scale: 1.1;
+  }
+}
+
+.darkModeIcon {
+  width: 15px;
+  margin-right: 4px;
+}
+
+.darkModeTheme {
+  background-color: $background-color-dark-secondary;
+  -webkit-transition: $background-color-transition;
+  -ms-transition: $background-color-transition;
+  transition: $background-color-transition;
+}

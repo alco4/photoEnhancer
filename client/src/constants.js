@@ -1,0 +1,44 @@
+const USER_ASSETS_URL = "https://alanlabs.imgix.net";
+const IMGIX_ASSETS_URL = "https://assets.imgix.net";
+const DEFAULT_PREVIEW_IMG = `${IMGIX_ASSETS_URL}/examples/treefrog.jpg`;
+
+const ROTATION_KEY = "rot";
+const DEFAULT_ROTATION = 0;
+
+const BRIGHTNESS_KEY = "bri";
+const DEFAULT_BRIGHTNESS = 0;
+
+const CONTRAST_KEY = "con";
+const DEFAULT_CONTRAST = 0;
+
+const EXPOSURE_KEY = "exp";
+const DEFAULT_EXPOSURE = 0;
+
+const GAMMA_KEY = "gam";
+const DEFAULT_GAMMA = 0;
+
+const INVERT_KEY = "invert";
+const DEFAULT_INVERT = false;
+
+const QUALITY_KEY = "quality";
+const DEFAULT_QUALITY = 75;
+
+export {
+  USER_ASSETS_URL,
+  IMGIX_ASSETS_URL,
+  DEFAULT_PREVIEW_IMG,
+  ROTATION_KEY,
+  DEFAULT_ROTATION,
+  BRIGHTNESS_KEY,
+  DEFAULT_BRIGHTNESS,
+  CONTRAST_KEY,
+  DEFAULT_CONTRAST,
+  EXPOSURE_KEY,
+  DEFAULT_EXPOSURE,
+  GAMMA_KEY,
+  DEFAULT_GAMMA,
+  INVERT_KEY,
+  DEFAULT_INVERT,
+  QUALITY_KEY,
+  DEFAULT_QUALITY,
+};
