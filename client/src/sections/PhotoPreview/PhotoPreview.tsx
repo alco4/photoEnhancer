@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { ActionButtons } from '../../components';
 import loadingGif from '../../assets/img/loading.gif'
 import styles from './photoPreview.module.scss'
@@ -19,8 +18,6 @@ const PhotoPreview = ({ imgUrl, onUploadAsset }: { imgUrl: string, onUploadAsset
     useEffect(() => {
         async function callApi() {
             setLoading(true)
-            const formData = new FormData();
-            formData.append("file", uploadFile);
             const imgName = await uploadFileApi(uploadFile)
             onUploadAsset(`${USER_ASSETS_URL}/${imgName}`)
         }
