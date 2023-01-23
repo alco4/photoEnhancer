@@ -41,7 +41,6 @@ function App() {
       <div className={styles.flexContainer}>
         <SideMenu applyFilters={applyFilters} resetFilters={resetFilters} />
         <div className={styles.appContent}>
-
           <PhotoPreview imgUrl={imgUrl} onUploadAsset={handleOnUploadAsset} />
           <Gallery onClick={handleOnClickGalleryImg} />
         </div>
