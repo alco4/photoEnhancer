@@ -15,8 +15,6 @@ function App() {
 
   useEffect(() => setImgUrl(buildURL(baseImg, filterParams)), [baseImg, filterParams])
 
-  useEffect(() => setImgUrl(buildURL(baseImg, filterParams)), [baseImg, filterParams])
-
   const applyFilters = (params: {}) => {
     setFilterParams(params)
   }
