@@ -10,7 +10,6 @@ function App() {
   const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext)
   const [baseImg, setBaseImg] = useState(DEFAULT_PREVIEW_IMG)
   const [filterParams, setFilterParams] = useState({})
-  const [resetFilters, setResetFilters] = useState(false)
   const [imgUrl, setImgUrl] = useState('')
 
   useEffect(() => setImgUrl(buildURL(baseImg, filterParams)), [baseImg, filterParams])
@@ -24,7 +23,6 @@ function App() {
   const handleOnClickGalleryImg = (e: React.MouseEvent<HTMLDivElement>, val: string) => {
     e.stopPropagation()
     setBaseImg(val)
-    setResetFilters(!resetFilters)
   }
 
   const handleOnUploadAsset = (assetUrl) => setBaseImg(assetUrl)
@@ -37,7 +35,7 @@ function App() {
         handleToggleDarkMode={handleToggleDarkMode}
       />
       <div className={styles.flexContainer}>
-        <SideMenu applyFilters={applyFilters} resetFilters={resetFilters} />
+        <SideMenu applyFilters={applyFilters} resetFilters={baseImg} />
         <div className={styles.appContent}>
           <PhotoPreview imgUrl={imgUrl} onUploadAsset={handleOnUploadAsset} />
           <Gallery onClick={handleOnClickGalleryImg} />
